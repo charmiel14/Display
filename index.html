@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS DISPLAY</title>
+   
+   <style>
+
+    body {
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        background-color: #f3e8ff;
+    }
+
+    h1 {
+        text-align: center;
+        color: whitesmoke;
+        padding: 20px;
+        background-color: #6b21a8;
+    }
+
+    .block {
+        margin: 40px;
+    }
+
+    .block a {
+        display: block;
+        padding: 20px;
+        background-color: #8b5cf6;
+        text-decoration: none;
+        color: whitesmoke;
+        margin: 10px;
+        border: 2px solid #6d28d9;
+        text-align: center;
+        border-radius: 10px;
+        font-family: monospace;
+        font-size: large;
+    }
+
+    .inline {
+        margin: 40px;
+    }
+
+    .inline p {
+        display: inline;
+        padding: 20px;
+        background-color: #a78bfa;
+        text-decoration: none;
+        color: #ffffff;
+        border: 2px solid #7c3aed;
+        text-align: center;
+        border-radius: 10px;
+        font-family: monospace;
+        font-size: large;
+        margin: 20px;
+    }
+
+    .inline-block {
+        margin: 40px;
+    }
+
+    .inline-block p {
+        display: inline-block;
+        padding: 20px;
+        background-color: #c4b5fd;
+        text-decoration: none;
+        color: #4c1d95;
+        border: 2px solid #8b5cf6;
+        text-align: center;
+        border-radius: 10px;
+        font-family: monospace;
+        font-size: large;
+        margin: 10px;
+    }
+
+    .mark {
+        display: none;
+    }
+
+    .flex {
+        display: flex;
+        gap: 20px;
+        background-color: #7e22ce;
+        height: 700px;
+        align-items: center;
+        justify-content: space-evenly;
+        flex-direction: column;
+    }
+
+    .flex .card {
+        background-color: #e9d5ff;
+        width: 200px;
+        height: 150px;
+        text-align: center;
+        padding: 10px;
+        font-size: 20px;
+        font-style: italic;
+        border: 2px solid #6d28d9;
+    }
+
+   </style>
+
+</head>
+
+<body>
+
+    <h1>DISPLAY PROPERTY</h1>
+    <hr>
+
+    <div class="block">
+        <a href="#">BLOCK DISPLAY</a>
+        <a href="#">BLOCK DISPLAY</a>
+    </div>
+
+    <hr>
+
+    <div class="inline">
+        <p>INLINE DISPLAY</p>
+        <p>INLINE DISPLAY</p>
+    </div>
+
+    <hr>
+
+    <div class="inline-block">
+        <p>Inline Block Display</p>
+        <p>Inline Block Display</p>
+        <p>Inline Block Display</p>
+    </div>
+
+    <hr>
+
+    <p>THIS IS DISPLAY NONE <span class="mark"> BACUS</span></p>
+
+    <hr>
+
+    <h1>DISPLAY FLEX</h1>
+
+    <hr>
+
+    <div class="flex">
+        <div class="card">FLEX BOX</div>
+        <div class="card">FLEX BOX</div>
+        <div class="card">FLEX BOX</div>
+    </div>
+
+</body>
+</html>
